@@ -58,7 +58,7 @@ Check U-shaped serial position curve.
 ```
 Rscript serial_position_curve_check.R
 ```
-![serial_position_curve](https://github.com/grocio/stm-semsim-effect/blob/master/Results/Serial_Position_Curve.png)
+![serial_position_curve](https://github.com/grocio/semsim-stm-exp/blob/main/Results/Serial_Position_Curve.png)
 ### Optional 3. Check homogeneity of lists regarding lexicon-semantic variables
 
 ```
