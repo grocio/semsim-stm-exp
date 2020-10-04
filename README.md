@@ -71,3 +71,14 @@ python lexico_semantic_variables_check.py
 bash data_cleansing.sh
 python semantic_association_check.py
 ```
+
+## References
+Brysbaert, M., & New, B. (2009). Moving beyond Kučera and Francis: A critical evaluation of current word frequency norms and the introduction of a new and improved word frequency measure for American English. Behavior Research Methods, 41(4), 977–990. doi: [10.3758/BRM.41.4.977](https://doi.org/10.3758/BRM.41.4.977)
+
+Ishiguro, S., & Saito, S. (2020). The detrimental effect of semantic similarity in short-term memory tasks: A meta-regression approach. Psychonomic Bulletin & Review. doi: [10.3758/s13423-020-01815-7](https://doi.org/10.3758/s13423-020-01815-7)
+
+Kuperman, V., Stadthagen-Gonzalez, H., & Brysbaert, M. (2012). Age-of-acquisition ratings for 30,000 English words. Behavior Research Methods, 44(4), 978–990. doi: [10.3758/s13428-012-0210-4](https://doi.org/10.3758/s13428-012-0210-4)
+
+Schock, J., Cortese, M. J., & Khanna, M. M. (2012). Imageability estimates for 3,000 disyllabic words. Behavior Research Methods, 44(2), 374–379. doi: [10.3758/s13428-011-0162-0](https://doi.org/10.3758/s13428-011-0162-0)
+
+Warriner, A. B., Kuperman, V., & Brysbaert, M. (2013). Norms of valence, arousal, and dominance for 13,915 English lemmas. Behavior Research Methods, 45(4), 1191–1207. doi: [10.3758/s13428-012-0314-x](https://doi.org/10.3758/s13428-012-0314-x)
