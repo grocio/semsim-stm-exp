@@ -1,0 +1,62 @@
+Generalized linear mixed model fit by maximum likelihood (Laplace
+  Approximation) [glmerMod]
+ Family: binomial  ( logit )
+Formula: correct_in_position ~ position + euc_dist_from_cent + length +  
+    imageability + Lg10WF + AOA + (1 | listID/stimulus) + (1 |      subjectID)
+   Data: data
+Control: glmerControl(optimizer = "bobyqa", calc.derivs = TRUE)
+
+     AIC      BIC   logLik deviance df.resid 
+ 19026.7  19135.2  -9499.4  18998.7    17086 
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-8.4270 -0.6697 -0.2502  0.7029  6.5671 
+
+Random effects:
+ Groups          Name        Variance Std.Dev.
+ stimulus:listID (Intercept) 0.09803  0.3131  
+ subjectID       (Intercept) 0.98466  0.9923  
+ listID          (Intercept) 0.05546  0.2355  
+Number of obs: 17100, groups:  
+stimulus:listID, 600; subjectID, 114; listID, 100
+
+Fixed effects:
+                    Estimate Std. Error z value Pr(>|z|)    
+(Intercept)         1.128086   0.310679   3.631 0.000282 ***
+position2          -0.847325   0.064749 -13.086  < 2e-16 ***
+position3          -1.210905   0.064391 -18.806  < 2e-16 ***
+position4          -1.917464   0.065581 -29.238  < 2e-16 ***
+position5          -2.719168   0.070144 -38.765  < 2e-16 ***
+position6          -2.357169   0.067675 -34.831  < 2e-16 ***
+euc_dist_from_cent  0.065635   0.032564   2.016 0.043847 *  
+length             -0.143535   0.022721  -6.317 2.66e-10 ***
+imageability        0.087946   0.021934   4.010 6.08e-05 ***
+Lg10WF              0.279995   0.047079   5.947 2.73e-09 ***
+AOA                 0.003738   0.013403   0.279 0.780343    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Correlation of Fixed Effects:
+            (Intr) postn2 postn3 postn4 postn5 postn6 ec_d__ length imgblt
+position2   -0.116                                                        
+position3   -0.117  0.569                                                 
+position4   -0.111  0.565  0.575                                          
+position5   -0.108  0.534  0.546  0.556                                   
+position6   -0.112  0.552  0.563  0.570  0.552                            
+ec_dst_frm_ -0.069  0.003  0.003 -0.003 -0.012 -0.002                     
+length      -0.414  0.005  0.021  0.026  0.036  0.026  0.000              
+imageabilty -0.600 -0.011 -0.021 -0.032 -0.027 -0.023 -0.011 -0.007       
+Lg10WF      -0.544 -0.004 -0.009 -0.019 -0.031 -0.025 -0.184 -0.067  0.157
+AOA         -0.713  0.002 -0.006 -0.006 -0.004 -0.001 -0.019 -0.063  0.523
+            Lg10WF
+position2         
+position3         
+position4         
+position5         
+position6         
+ec_dst_frm_       
+length            
+imageabilty       
+Lg10WF            
+AOA          0.504

@@ -1,0 +1,63 @@
+Generalized linear mixed model fit by maximum likelihood (Laplace
+  Approximation) [glmerMod]
+ Family: binomial  ( logit )
+Formula: 
+order_errors ~ position + cheby_dist_from_cent + length + imageability +  
+    Lg10WF + AOA + (1 | listID/stimulus) + (1 | subjectID)
+   Data: data
+Control: glmerControl(optimizer = "bobyqa", calc.derivs = TRUE)
+
+     AIC      BIC   logLik deviance df.resid 
+  8615.5   8723.9  -4293.7   8587.5    17086 
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-0.8220 -0.3130 -0.2407 -0.1644  8.9051 
+
+Random effects:
+ Groups          Name        Variance Std.Dev.
+ stimulus:listID (Intercept) 0.03089  0.1758  
+ subjectID       (Intercept) 0.47167  0.6868  
+ listID          (Intercept) 0.02149  0.1466  
+Number of obs: 17100, groups:  
+stimulus:listID, 600; subjectID, 114; listID, 100
+
+Fixed effects:
+                      Estimate Std. Error z value Pr(>|z|)    
+(Intercept)          -3.848371   0.413788  -9.300  < 2e-16 ***
+position2             1.369128   0.134767  10.159  < 2e-16 ***
+position3             1.616208   0.132182  12.227  < 2e-16 ***
+position4             1.549731   0.132794  11.670  < 2e-16 ***
+position5             1.160799   0.137525   8.441  < 2e-16 ***
+position6             0.649071   0.146746   4.423 9.73e-06 ***
+cheby_dist_from_cent -0.134927   0.055183  -2.445   0.0145 *  
+length                0.035835   0.030130   1.189   0.2343    
+imageability         -0.028822   0.029015  -0.993   0.3205    
+Lg10WF                0.032670   0.062580   0.522   0.6016    
+AOA                  -0.004849   0.017731  -0.273   0.7845    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Correlation of Fixed Effects:
+            (Intr) postn2 postn3 postn4 postn5 postn6 chb___ length imgblt
+position2   -0.251                                                        
+position3   -0.258  0.776                                                 
+position4   -0.251  0.772  0.788                                          
+position5   -0.242  0.745  0.760  0.756                                   
+position6   -0.229  0.698  0.712  0.708  0.684                            
+chby_dst_f_ -0.072  0.004  0.000  0.002 -0.006  0.005                     
+length      -0.431 -0.006  0.008  0.004  0.004  0.000  0.010              
+imageabilty -0.602 -0.004 -0.012 -0.017 -0.007 -0.005 -0.018  0.010       
+Lg10WF      -0.554  0.009  0.011  0.008  0.003  0.007 -0.174 -0.054  0.151
+AOA         -0.719  0.004  0.000 -0.002 -0.003  0.001 -0.026 -0.044  0.524
+            Lg10WF
+position2         
+position3         
+position4         
+position5         
+position6         
+chby_dst_f_       
+length            
+imageabilty       
+Lg10WF            
+AOA          0.510
