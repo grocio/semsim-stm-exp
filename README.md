@@ -66,7 +66,7 @@ python lexico_semantic_variables_check.py
 ```
 
 ### Optional 4. Check associative strength
-
+Word association norms by De deyne et al. ([2019](https://doi.org/10.3758/s13428-018-1115-7)) will be used. Visit [their research project webpage](https://smallworldofwords.org/en/project/research) and click SWOW-EN2008 assoc. strengths (R123). Move `strength.SWOW-EN.R123.csv` to `Norms` directory. Then,
 ```
 bash data_cleansing.sh
 python semantic_association_check.py
@@ -74,6 +74,8 @@ python semantic_association_check.py
 
 ## References
 Brysbaert, M., & New, B. (2009). Moving beyond Kučera and Francis: A critical evaluation of current word frequency norms and the introduction of a new and improved word frequency measure for American English. Behavior Research Methods, 41(4), 977–990. doi: [10.3758/BRM.41.4.977](https://doi.org/10.3758/BRM.41.4.977)
+
+De Deyne, S., Navarro, D. J., Perfors, A., Brysbaert, M., & Storms, G. (2019). The “Small World of Words” English word association norms for over 12,000 cue words. Behavior Research Methods, 51(3), 987–1006. doi: [10.3758/s13428-018-1115-7](https://doi.org/10.3758/s13428-018-1115-7)
 
 Ishiguro, S., & Saito, S. (2020). The detrimental effect of semantic similarity in short-term memory tasks: A meta-regression approach. Psychonomic Bulletin & Review. doi: [10.3758/s13423-020-01815-7](https://doi.org/10.3758/s13423-020-01815-7)
 
