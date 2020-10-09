@@ -4,7 +4,10 @@
 # 2. Weak recency effect
 # 3. Transposition patters (e.g., locality constraint)
 
-# For transposition_gradients, see Henson, R. N. A., Norris, D. G., Page, M. P. A., & Baddeley, A. D. (1996). Unchained Memory: Error Patterns Rule out Chaining Models of Immediate Serial Recall. The Quarterly Journal of Experimental Psychology Section A, 49(1), 80–115. https://doi.org/10.1080/713755612
+# For transposition_gradients, see Henson, R. N. A., Norris, D. G., Page, M. P. A., & Baddeley, A. D. (1996).
+# Unchained Memory: Error Patterns Rule out Chaining Models of Immediate Serial Recall.
+# The Quarterly Journal of Experimental Psychology Section A, 49(1), 80–115.
+# https://doi.org/10.1080/713755612
 
 library(dplyr)
 library(ggplot2)
