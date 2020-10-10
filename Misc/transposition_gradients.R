@@ -71,5 +71,9 @@ g <- ggplot(plot_df, aes(x = Output, y = Rates, fill = Input)) +
         axis.line=element_line(colour = 'black', size = 0.2),
         axis.ticks=element_line(colour = 'black', size = 0.2),
         panel.border = element_blank()) +
-  scale_y_continuous(expand = c(0, 0), limits = c(0, 1.0)) +
+        ylab('Response proportion') + 
+  scale_y_continuous(expand = c(0, 0), limits = c(0, 1.0))
+
 ggsave('../Results/transposition_gradients.png', width=4.5, height=3)
+
+ggsave('../Results/transposition_gradients.pdf', width=4.5, height=3)
