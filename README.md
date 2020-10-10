@@ -41,7 +41,7 @@ Test the semantic similarity effect on STM.
 Rscript statistical_analysis.R
 ```
 
-### Optional 1. Exploratory Analysis with Chebyshev distance
+### Supplementary 1. Exploratory Analysis with Chebyshev distance
 
 Use Chebyshev distance instead of Euclidean distance. The implicit assumption behind the adoption of Euclidean distance is that valence, arousal, and dominace are equally used in semantic similarity cognition. It is, however, possible that only the most salient value among them is used. For example, if arousal information of a word (e.g., "snake") is very salient and distinctive, valence and dominance information would be ignored. Chebyshev distance is used to address this possibility.
 
@@ -51,26 +51,34 @@ python cheby_calc.py
 Rscript exploratory_cheby.R
 ```
 
-### Optional 2. Check U-shaped serial position curve
+### Supplementary 2. Check transposition gradients
 
-Check U-shaped serial position curve.
+Check locality constraint for error patterns. For accuracy, check primacy and recency effects (a strong primacy effect and weak recency effect for immediate serial recall).
 
 ```
-Rscript serial_position_curve_check.R
+Rscript transposition_gradients.R
 ```
-![serial_position_curve](https://github.com/grocio/semsim-stm-exp/blob/main/Results/Serial_Position_Curve.png)
-### Optional 3. Check homogeneity of lists regarding lexicon-semantic variables
+![transposition_gradients](https://github.com/grocio/semsim-stm-exp/blob/main/Results/transposition_gradients.png)
+### Supplementary 3. Check homogeneity of lists regarding lexicon-semantic variables
 
 ```
 python lexico_semantic_variables_check.py
 ```
 
-### Optional 4. Check associative strength
+### Supplementary 4. Check associative strength
 Word association norms by De deyne et al. ([2019](https://doi.org/10.3758/s13428-018-1115-7)) will be used. Visit [their research project webpage](https://smallworldofwords.org/en/project/research) and click SWOW-EN2008 assoc. strengths (R123). Move `strength.SWOW-EN.R123.csv` to `Norms` directory. Then,
 ```
 bash data_cleansing.sh
 python semantic_association_check.py
 ```
+
+### Supplementary 5. Check correlations between lexical or semantic variables
+```
+Rscripts lexsem_pairs_plot.R
+```
+![lexsem_pairs](https://github.com/grocio/semsim-stm-exp/blob/main/Results/pairsplot.png)
+
+Correlation coefficients are, in general, weak or modest. So, it is unlikely that multicollinearlity affects statistical results.
 
 ## References
 Brysbaert, M., & New, B. (2009). Moving beyond Kučera and Francis: A critical evaluation of current word frequency norms and the introduction of a new and improved word frequency measure for American English. Behavior Research Methods, 41(4), 977–990. doi: [10.3758/BRM.41.4.977](https://doi.org/10.3758/BRM.41.4.977)
