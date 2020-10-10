@@ -74,7 +74,7 @@ python semantic_association_check.py
 
 ### Supplementary 5. Check correlations between lexical or semantic variables
 ```
-Rscripts lexsem_pairs_plot.R
+Rscript lexsem_pairs_plot.R
 ```
 ![lexsem_pairs](https://github.com/grocio/semsim-stm-exp/blob/main/Results/pairsplot.png)
 
