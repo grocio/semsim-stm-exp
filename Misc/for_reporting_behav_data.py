@@ -173,8 +173,8 @@ if DEMOG_DATA:
         age_li.append(age)
         gender_li.append(gender)
 
-    rounded_mean_age = correct_round(stat.mean(age_li)
-    rounded_sd_age = correct_round(stat.stdev(age_li)
+    rounded_mean_age = correct_round(stat.mean(age_li))
+    rounded_sd_age = correct_round(stat.stdev(age_li))
 
     print('Age Mean: {}\nAge SD: {}'.format(rounded_mean_age, rounded_sd_age))
 
