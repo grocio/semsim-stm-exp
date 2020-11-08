@@ -177,6 +177,7 @@ if DEMOG_DATA:
     rounded_sd_age = correct_round(stat.stdev(age_li))
 
     print('Age Mean: {}\nAge SD: {}'.format(rounded_mean_age, rounded_sd_age))
+    print('Age Max: {}\nAge Min: {}'.format(max(age_li), min(age_li)))
 
     for gender_category in set(gender_li):
         print('Gender Category: {} Count: {}'.format(gender_category, gender_li.count(gender_category)))
