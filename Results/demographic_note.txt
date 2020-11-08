@@ -1,0 +1,5 @@
+Age Mean: 24.78
+Age SD: 3.62
+Gender Category: Male Count: 47
+Gender Category: Prefer not to say Count: 1
+Gender Category: Female Count: 66
