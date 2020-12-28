@@ -1,5 +1,5 @@
 # semsim-stm-exp
-Scripts for an online experiment testing the semantic similarity effect on short-term memory. A preprint (a manuscript reported before peer-review) is available here.
+Scripts for an online experiment testing the semantic similarity effect on short-term memory. A preprint (a manuscript reported before peer-review) is available at [https://psyarxiv.com/va5js](https://psyarxiv.com/va5js).
 
 ## Dependencie
 python libraries: pandas, [tabula-py](https://github.com/chezou/tabula-py) (that requires Java runtime).
